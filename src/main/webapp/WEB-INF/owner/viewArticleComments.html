@@ -1,0 +1,332 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>评论</title>
+    <link type="images/x-icon" rel="shortcut icon" href="/imgs/blog_icon.png">
+    <!--  jQuery-->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/constants.js"></script>
+    <script src="/js/showOrHiddenLoadingDiv.js"></script>
+
+<!--
+<link type="images/x-icon" rel="shortcut icon" href="/pblog/imgs/blog_icon.png">
+    <script src="/pblog/js/jquery-3.4.1.min.js"></script>
+    <script src="/pblog/js/constants.js"></script>
+    <script src="/pblog/js/showOrHiddenLoadingDiv.js"></script>
+-->
+    <style>
+        .main_show_div {
+            width: 70%;
+            margin: 0 0 0 50%;
+            transform: translateX(-50%);
+            height: max-content;
+            padding: 10px
+        }
+
+        .comment_area_div {
+            position: relative;
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: max-content;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            bottom: 3px;
+        }
+
+        ul {
+            width: 90%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            border-bottom: 1px solid #eee;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        .show_article_name_div {
+            position: absolute;
+            width: 50%;
+            height: 200px;
+            left: 50%;
+            top: 100px;
+            transform: translateX(-50%);
+            background: pink;
+            overflow: auto;
+            opacity: 0.7;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<div class="main_show_div" id="main_show_div">
+    <p id="comment_data_number_p">0条评论:</p>
+    <button id="cmd_done_button" style="margin-bottom:1%;display:none;">完成操作</button>
+    <button id="cancel_all_cmd_button" style="margin-bottom:1%;display: none">取消所有操作</button>
+    <button id="agree_all_button" style="margin-bottom:1%;display: none">全部通过</button>
+    <button id="check_table_name_button"
+            style="margin-bottom:1%;margin-left: 4%;background:#22B14C;border-radius: 2px ">查文章
+    </button>
+    <span id="table_name_span" style="margin:0 0 1% 1%"></span>
+    <div class="comment_area_div" id="comment_area_div">
+    </div>
+</div>
+</body>
+<!--查看文章名-->
+<script>
+    $('#check_table_name_button').click(function () {
+        loadArticleNameFunc();
+    });
+    var articleNameArr = [];
+    var articleLinkArr = [];
+    var loadArticleNameAjax;
+    var currentCmdTableName;
+
+    function createShowArticleNameArea() {
+        if ($('#show_article_name_div'))
+            $('#show_article_name_div').remove();
+        $('#main_show_div').append($(' <div class="show_article_name_div" id="show_article_name_div";"></div>'));
+        $('#show_article_name_div').append($('<ul id="show_article_name_ul" style="width: 70%"></ul>'));
+        articleNameArr.forEach(function (articleName, index) {
+            $('#show_article_name_ul').append(
+                $('<li id="show_article_name_li_' + index + '" style="cursor: pointer;"></li>')
+            );
+            let li = $('#show_article_name_li_' + index);
+            li.html(articleName);
+            li.hover(function () {
+                $(this).css('text-decoration', 'underline');
+            }, function () {
+                $(this).css('text-decoration', 'none');
+            });
+            /*
+               点击事件
+             */
+            let tableName = articleLinkArr[index].split('.')[0].split('/');
+            //表明来自与未验证的表
+            li.attr('tableName', tableName[tableName.length - 1]);
+            li.attr('articleName', articleName);
+            li.click(function () {
+                $('#table_name_span').html($(this).attr('articleName'));
+                currentCmdTableName = $(this).attr('tableName');
+                //开始进行数据的加载
+                loadCommentDataFunc($(this).attr('tableName'));
+                fromCommentTableDataArr = [[]];
+                $('#show_article_name_div').remove();
+            });
+        });
+    }
+
+    var loadArticleNameFunc = function () {
+        articleNameArr = [];
+        articleLinkArr = [];
+        wannaDeleteCommentIdArr = [];
+        wannaDeleteCommentIndexArr = [];
+        if (loadArticleNameAjax)
+            loadArticleNameAjax.abort();
+        loadArticleNameAjax = $.ajax({
+            method: 'POST',
+            url: 'http://' + IP + ':' + PORT_PATH + '/data/getArticleNamesFromAppointTable',
+            data: {tableType: 'professional'},
+            dataType: 'text',
+            success: function (data) {
+                if (data !== FAILURE) {
+                    var dataArr = data.split(' pblog ');
+                    dataArr.forEach(function (value, index) {
+                        if (index % 2 === 0)
+                            articleNameArr.push([value]);
+                        else
+                            articleLinkArr.push(value);
+                    });
+                    createShowArticleNameArea();
+                } else
+                    alert("数据加载失败！！！")
+            }
+        }).fail(function () {
+            alert("网络请求失败，重新请求？？？")
+        });
+    }
+
+</script>
+<!--加载数据-->
+<script>
+    var wannaDeleteCommentIdArr = [];
+    var wannaDeleteCommentIndexArr = [];
+    var fromCommentTableDataArr = [[]];
+    var loadCommentDataFunc = function (tableName) {
+        showOrHiddenLoadingDiv(true);
+        $.ajax({
+            method: 'POST',
+            url: 'http://' + IP + ':' + PORT_PATH + '/article/getCommentData',
+            data: {tableName: tableName},
+            dataType: 'text',
+            success: function (data) {
+                showOrHiddenLoadingDiv(false);
+                if (data !== FAILURE) {
+                    let commentDataArr = data.split(' pblog ');
+                    let arrIndex = 0;
+                    commentDataArr.forEach(function (value, index) {
+                        fromCommentTableDataArr[arrIndex].push(value);
+                        if ((index + 1) % 4 === 0) {
+                            arrIndex++;
+                            if (index + 1 < commentDataArr.length)
+                                fromCommentTableDataArr.push([]);
+                        }
+                    });
+                    $('#agree_all_button').css('display', 'inline-block');
+                    $('#comment_data_number_p').html(fromCommentTableDataArr.length + '条评论：');
+                    createElementAndSetCommentData();
+                }
+            }
+        }).fail(function () {
+            showOrHiddenLoadingDiv(false);
+            if (confirm("数据加载失败，重新加载？？？")) {
+                loadCommentDataFunc(tableName);
+            }
+        });
+    };
+    var createElementAndSetCommentData = function () {
+        fromCommentTableDataArr.forEach(function (commentData, index) {
+            $('#comment_area_div').append($('  <ul id="comment_data_ul_' + index + '">\n' +
+                '            <li id="id_li_' + index + '"></li>\n' +
+                '            <li id="commenterId_li_' + index + '"></li>\n' +
+                '            <li >\n' +
+                '                <p id="commentContent_p_' + index + '"></p>\n' +
+                '            </li>\n' +
+                '            <li id="commentDataTime_li_' + index + '"></li>\n' +
+                '            <li style="text-align: right"><img id="comment_delete_img_' + index + '" style="width: 5%" src="/imgs/failure_icon.png"/></li>\n' +
+                '        </ul>'));
+
+
+            $('#' + 'id_li_' + index).html(commentData[0]);
+            $('#' + 'commenterId_li_' + index).html(commentData[1]);
+            $('#' + 'commentContent_p_' + index).html(commentData[2]);
+            $('#' + 'commentDataTime_li_' + index).html(commentData[3]);
+
+            let img = document.getElementById('comment_delete_img_' + index);
+            img.tag = commentData[0];
+            img.index = index;
+            img.onclick = function () {
+                if (confirm('确认删除该评论？')) {
+                    wannaDeleteCommentIdArr.push(this.tag);
+                    $('#comment_data_number_p').html(fromCommentTableDataArr.length - wannaDeleteCommentIdArr.length + '条评论:');
+                    wannaDeleteCommentIndexArr.push(this.index);
+                    $('#' + 'comment_data_ul_' + this.index).css('display', 'none');
+                    /*
+                     *显示操作按钮
+                     */
+                    if ($('#cmd_done_button').css('display') === 'none')
+                        modifyCmdDoneAndCancelButtonDisplay('none');
+                    if ($('#agree_all_button').css('display') !== 'none')
+                        $('#agree_all_button').css('display', 'none')
+                }
+            };
+        });
+    };
+
+    function modifyCmdDoneAndCancelButtonDisplay(value) {
+        if (value === 'none') {
+            $('#cmd_done_button').css('display', 'inline-block');
+            $('#cancel_all_cmd_button').css('display', 'inline-block');
+        } else {
+            $('#cmd_done_button').css('display', 'none');
+            $('#cancel_all_cmd_button').css('display', 'none');
+        }
+    }
+
+</script>
+<!--按钮点击事件-->
+<script>
+    function deleteIllegleCommentFunc(button) {
+        //开始删除不合法的信息
+        let data = '';
+        wannaDeleteCommentIdArr.forEach(function (value, index) {
+            if (index + 1 < wannaDeleteCommentIdArr.length) {
+                data += (value + ' pblog ');
+            } else
+                data += value;
+
+        });
+        showOrHiddenLoadingDiv(true);
+        $.ajax({
+            method: 'POST',
+            url: 'http://' + IP + ':' + PORT_PATH + '/article/verifyCommentDataDone',
+            data: {
+                tableName: currentCmdTableName,
+                data: data
+            },
+            dataType: 'text',
+            success: function (data) {
+                button.canClick = true;
+                showOrHiddenLoadingDiv(false);
+                if (data !== FAILURE) {
+                    if ($('#agree_all_button').css('display') !== 'none')
+                        $('#agree_all_button').css('display', 'none');
+                    modifyCmdDoneAndCancelButtonDisplay('inline-block');
+                    alert('操作完成！！！');
+                    /**
+                     * 在这里更新显示数据：未完成
+                     */
+                    $('#comment_data_number_p').html(fromCommentTableDataArr.length - wannaDeleteCommentIdArr.length + '条评论:');
+                    $('#comment_data_number_p').html('0条评论:');
+                    $('#comment_area_div').empty();
+                    wannaDeleteCommentIdArr.length = 0;
+                    wannaDeleteCommentIndexArr.length = 0;
+                    $('#table_name_span').html('');
+                } else {
+                    alert("操作失败!!!");
+                    cancelCmd();
+                }
+
+            }
+        }).fail(function () {
+            button.canClick = true;
+            showOrHiddenLoadingDiv(false);
+            alert("网络请求失败!!!");
+            cancelCmd();
+        });
+    }
+
+    var cmd_done_button = document.getElementById('cmd_done_button');
+    cmd_done_button.canClick = true;
+    cmd_done_button.onclick = function () {
+        if (this.canClick) {
+            this.canClick = false;
+            //开始删除不合法的信息
+            deleteIllegleCommentFunc(this);
+        }
+    };
+    var cancel_all_cmd_button = document.getElementById('cancel_all_cmd_button');
+    cancel_all_cmd_button.onclick = function () {
+        modifyCmdDoneAndCancelButtonDisplay('inline-block');
+        $('#agree_all_button').css('display', 'inline-block');
+        if (wannaDeleteCommentIdArr.length > 0) {
+            cancelCmd();
+        }
+    };
+
+    function cancelCmd() {
+        //$('#comment_area_div').empty();
+        // createElementAndSetCommentData();
+        for (let index = 0; index < wannaDeleteCommentIndexArr.length; index++)
+            $('#comment_data_ul_' + wannaDeleteCommentIndexArr[index]).css({
+                'display': 'list-item',
+                'list-style-type': 'none'
+            });
+        $('#comment_data_number_p').html(fromCommentTableDataArr.length + '条评论:');
+        wannaDeleteCommentIdArr.length = 0;
+        wannaDeleteCommentIndexArr.length = 0;
+    }
+
+    var agree_all_button = document.getElementById('agree_all_button');
+    agree_all_button.canClick = true;
+    agree_all_button.onclick = function () {
+        if (this.canClick) {
+            this.canClick = false;
+            //开始删除不合法的信息
+            deleteIllegleCommentFunc(this);
+        }
+    };
+</script>
+
+</html>

@@ -1,0 +1,170 @@
+
+/*<!--  简介区域-- >*/
+#profile_div {
+    float: left;
+    position: fixed;
+    width: 10%;
+    height: 90%;
+    background: beige;
+    opacity: 0.6;
+    margin-left: 9%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+#mylogo_img {
+    margin-top: 5%;
+    width: 80%;
+    height: 13%;
+    border: 1px dotted #000;
+    border-radius: 20px;
+}
+
+.div_include_img_text {
+    width: 100%;
+    height: max-content;
+    margin-top: 20%;
+}
+
+.in_span_text {
+    position: absolute;
+    left: 10%;
+}
+
+.div_include_img_text img {
+    width: 25%;
+    margin-left: 25%;
+}
+
+.in_span_text:hover {
+    color: cyan;
+}
+
+/*    博客的内容显示区域*/
+#blog_main_content_div {
+    float: right;
+    width: 70%;
+    margin-right: 8%;
+    height: max-content;
+    margin-bottom: 1%;
+    background: #99D9EA;
+    border-radius: 10px;
+
+    opacity: 0.7;
+}
+
+.title_div {
+    position: absolute;
+    font-size: 70px;
+    color: honeydew;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 57%;
+    top: 100%;
+    transform: translateX(-50%) rotateX(60deg);
+    z-index: 1;
+}
+
+.top_bg_img {
+    width: 50%;
+    margin-left: 0%;
+    transform: translateX(-50%);
+    opacity: 0.8;
+    border-radius: 10px;
+    position: relative;
+    /*z-index: -1;*/
+}
+
+.dictum_div {
+    width: 90%;
+    padding: 1%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow-y: auto;
+    font-size: 20px;
+    height: 25px;
+    text-align: center;
+    border-bottom: 1px dotted brown;
+}
+
+.func_module_table {
+    text-align: center;
+    width: 95%;
+    border: 4px solid #5CD74C;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    border-radius: 0 0 10px 10px;
+}
+
+/*    内容显示*/
+.content_show_div {
+    width: 95%;
+    height: max-content;
+}
+
+/*
+ *  分页区域
+ */
+
+.paging_area_div {
+    display: none;
+    width: 50%;
+    height: max-content;
+    /*padding: 1% 0 1% 0;*/
+    margin-top: 2%;
+    background: #BF30C1;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}
+
+/* 分页图标 */
+
+.left_arrow_img {
+    position: relative;
+    width: 10%;
+}
+
+.right_arrow_img {
+    position: relative;
+    width: 10%;
+    left: 79%;
+}
+
+/* 分页数字区域 */
+
+.paging_table {
+    width: 70%;
+    position: absolute;
+    border-collapse: collapse;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 70%; */
+}
+
+.paging_td {
+    text-align: center;
+}
+
+.paging_td span {
+    color: #4285f4;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.paging_td span:hover {
+    text-decoration: underline;
+    cursor: pointer
+}
+
+/*装饰区域 */
+.decorate_div {
+    position: fixed;
+    background: #C3C3C3;
+    /*border-radius: 0 0 50px 50px;*/
+    opacity: 0.4;
+    width: 8%;
+    height: 98%;
+}

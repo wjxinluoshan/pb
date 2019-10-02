@@ -1,0 +1,438 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>编辑文档</title>
+    <link type="images/x-icon" rel="shortcut icon" href="/imgs/blog_icon.png">
+    <!--   VUE-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--  jQuery-->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/constants.js"></script>
+    <script src="/js/ownerVerify.js"></script>
+    <script src="/js/showOrHiddenLoadingDiv.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/showPictureTable.css">
+    <link rel="stylesheet" type="text/css" href="/css/loadingDiv.css">
+
+<!--
+<link type="images/x-icon" rel="shortcut icon" href="/pblog/imgs/blog_icon.png">
+    <script src="/pblog/js/jquery-3.4.1.min.js"></script>
+    <script src="/pblog/js/constants.js"></script>
+    <script src="/pblog/js/ownerVerify.js"></script>
+    <script src="/pblog/js/showOrHiddenLoadingDiv.js"></script>
+    <link rel="stylesheet" type="text/css" href="/pblog/css/showPictureTable.css">
+    <link rel="stylesheet" type="text/css" href="/pblog/css/loadingDiv.css">
+-->
+    <style>
+        .main_div {
+            width: 70%;
+            height: max-content;
+            background: #99D9EA;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-top: 1%;
+            border-radius: 30px;
+        }
+
+        /*选择照片的input*/
+        .choice_photos_input {
+            margin-left: 50%;
+            margin-top: 2%;
+            transform: translateX(-50%);
+        }
+
+        .upload_pictures_button {
+            border: 0;
+            border-radius: 5px;
+            width: 10%;
+            height: 30px;
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        .upload_pictures_button:hover {
+            background: aquamarine;
+        }
+
+        .upload_pictures_button:active {
+            background: #C6587B;
+        }
+
+    </style>
+</head>
+<body style="background: #C6587B">
+<div class="loading_div" id="loading_div">
+    <div></div>
+    <img src="/imgs/loading.gif"/></div>
+<h1 style="text-align: center">文档操作</h1>
+<div class="main_div">
+    <input id='choice_docs_input' class="choice_photos_input" type="file"
+           accept=".doc,.docx,.xls,.xlsx,.pdf,.ppt,.pptx"
+           multiple/><br>
+    <button class="choice_photos_input upload_pictures_button" id="upload_docs_button">上传</button>
+    <br>
+    <button class="choice_photos_input upload_pictures_button" id="view_stored_docs_button"
+            style="width: max-content">操作已存文档
+    </button>
+    <table class="show_pictures_table" id="show_docs_table">
+
+    </table>
+</div>
+</body>
+<script src="/js/createShowDocsTable.js"></script>
+<!--
+<script src="/pblog/js/createShowDocsTable.js"></script>
+-->
+<script>
+    var formData = new FormData();
+    var filesNameString = '';
+    var resultFiles;
+    //onChange会根据本次选择和上次选择的file进行比较相同则不执行，当
+    //一次性删除完上次选择的照片后就应该将 input  value值设置为''
+    /**
+     * 这里存在文本查重的问腿:在客服端进行解决
+     */
+    document.getElementById('choice_docs_input').onchange = function () {
+        resultFiles = this.files;
+        var canShowNumber = 0;
+        /**
+         * 使用promise异步加载
+         * @type {Promise}
+         */
+        for (var i = 0; i < resultFiles.length; i++) {
+            if (choosedDocsNameFromLocal.indexOf(resultFiles[i].name) !== -1) {
+                continue;
+            }
+            canShowNumber++;
+            choosedDocsNameFromLocal.push(resultFiles[i].name)
+        }
+        docCreateImgTag(choosedDocsNameFromLocal.length - canShowNumber);
+    };
+
+    var uploadAjax = '';
+    var uploadFilesNameAjax = '';
+    var uploadFunc = function () {
+        showOrHiddenLoadingDiv(true);
+        //上传操作
+        if (uploadAjax)
+            uploadAjax.abort();
+        uploadAjax = $.ajax({
+            method: 'POST',
+            url: 'http://' + IP + ':' + PORT_PATH + '/data/uploadDocs',
+            data: formData,
+            contentType: false, //禁止设置请求类型
+            processData: false, //禁止jquery对DAta数据的处理,默认会处理
+            dataType: 'text',
+            success: function (data) {
+                showOrHiddenLoadingDiv(false);
+                if (data === FAILURE) {
+                    if (confirm("上传失败是否需要重新上传？"))
+                        uploadFunc();
+                    else
+                        return
+                } else if (data === SUCCESS) {
+                    /**
+                     * 该请求用于在服务器端修改文件名的中文乱码
+                     */
+                    if (uploadFilesNameAjax)
+                        uploadFilesNameAjax.abort();
+                    uploadFilesNameAjax = $.ajax({
+                        method: 'POST',
+                        url: 'http://' + IP + ':' + PORT_PATH + '/data/uploadDocs',
+                        data: {filesNameString: filesNameString},
+                        dataType: 'text',
+                        success: function (data) {
+                            filesNameString = '';
+                            //返回成功
+                            alert('上传成功!!!');
+                            //是否要去别的页面暂时未定？？？？？
+                            window.location.href = 'http://' + IP + ':' + PORT_PATH + '/owner/ownerMain.html';
+                        }
+                    });
+                } else {
+                    alert(data)
+                }
+                formData = new FormData();
+            }
+
+        }).fail(function () {
+            showOrHiddenLoadingDiv(false);
+            if (confirm("网络请求失败，是否要重新请求？")) {
+                uploadFunc();
+            } else {
+                formData = new FormData();
+                filesNameString = '';
+            }
+        });
+    };
+    /**
+     * 上传文档
+     */
+    $('#upload_docs_button').on('click', function () {
+        if (choosedDocsNameFromLocal.length === 0) {
+            alert("您还没选要上传的文档!!!");
+            return;
+        }
+        if (canDocsUpload) {
+            for (var i = 0; i < resultFiles.length; i++) {
+                if (choosedDocsNameFromLocal.indexOf(resultFiles[i].name) !== -1) {
+                    formData.append('data', resultFiles[i]);
+                    filesNameString += (resultFiles[i].name + ',');
+                }
+            }
+            if (filesNameString && filesNameString.length !== 0)
+                filesNameString = filesNameString.substring(0, filesNameString.length - 1);
+            uploadFunc();
+        } else {
+            alert('文档正在加载中，请稍等!!!');
+        }
+    });
+
+
+    /**
+     * 查看已存文档
+     */
+    var loadMorePromptLi;
+    var loadDocsAjax;
+    //想要文档的路径的集合
+    var wantDeleteDocsPathArray = [];
+    //加载出来的文档的path
+    var loadDocsPathArray = [];
+    var theDocCurrentPageIndex = 1;
+    var ul = document.createElement('ul');
+    ul.style.width = '90%';
+    ul.style.height = 'max-length';
+    var termalLoadingDoc = function () {
+        showOrHiddenLoadingDiv(true);
+        if (loadDocsAjax)
+            loadDocsAjax.abort();
+        loadDocsAjax = $.ajax({
+            method: 'POST',
+            url: 'http://' + IP + ':' + PORT_PATH + '/data/getDocInfo',
+            data: {pageNumber: theDocCurrentPageIndex.toString()},
+            dataType: 'text',
+            success: function (data) {
+                showOrHiddenLoadingDiv(false);
+                if (data === FAILURE) {
+                    if (confirm("数据加载失败，是否重新？？？")) {
+                        termalLoadingDoc();
+                    } else {
+                        if (theDocCurrentPageIndex === 1) {
+                            $('#view_stored_docs_button').html('操作已存文档');
+                            $('#show_stored_pictures_div').remove();
+                            // theDocCurrentPageIndex = 1;
+                            if (document.getElementById('load_more_span'))
+                                document.getElementById('load_more_span').innerHTML = "点击加载更多..."
+                        }else {
+                            if (document.getElementById('load_more_span'))
+                                document.getElementById('load_more_span').innerHTML = "点击加载更多..."
+
+                        }
+
+                    }
+                    return
+                }
+                //返回的形式   docFilePath，docFileName,docFilePath.....
+                //加载完成后指示下一页picture
+                theDocCurrentPageIndex++;
+                var dataArr = data.split(SPLIT_STRING);
+                let tag=-1;
+                for (var index = 0; index < dataArr.length; index++) {
+                    if (index % 2 !== 0) {
+                        loadDocsPathArray.push(dataArr[index - 1]);
+
+                        var li = document.createElement('li');
+                        li.style.textAlign = "center";
+                        li.style.listStyleType = 'none';
+                        //设置li的id为了删除
+                        let i = index - 1;
+                        tag++;
+                        li.setAttribute('id', i.toString());
+                        var img = document.createElement('img');
+                        img.style.width = '25%';
+                        if (dataArr[index].endsWith('.doc'))
+                            img.setAttribute('src', 'http://' + IP + ':' + PORT_PATH + '/imgs/doc_larger_icon.png');
+                        else if (dataArr[index].endsWith('.docx')) {
+                            img.setAttribute('src', 'http://' + IP + ':' + PORT_PATH + '/imgs/docx_icon.png');
+                        } else if (dataArr[index].endsWith('.pdf')) {
+                            img.setAttribute('src', 'http://' + IP + ':' + PORT_PATH + '/imgs/pdf_icon.png');
+                        } else if (dataArr[index].endsWith('.xls')) {
+                            img.setAttribute('src', 'http://' + IP + ':' + PORT_PATH + '/imgs/xls_icon.png');
+                        } else if (dataArr[index].endsWith('.xlsx')) {
+                            img.setAttribute('src', 'http://' + IP + ':' + PORT_PATH + '/imgs/xlsx_icon.png');
+                        } else if (dataArr[index].endsWith('.ppt')) {
+                            img.setAttribute('src', 'http://' + IP + ':' + PORT_PATH + '/imgs/ppt_icon.png');
+                        } else {
+                            img.setAttribute('src', 'http://' + IP + ':' + PORT_PATH + '/imgs/pptx_icon.png');
+                        }
+                        img.tag = tag;
+                        img.i = i;
+                        img.onclick = function () {
+                            if (confirm('确认删除该文档吗?')) {
+                                wantDeleteDocsPathArray.push(loadDocsPathArray[this.tag]);
+                                $('#' + this.i).remove();
+                            }
+                        };
+                        let span = document.createElement('span');
+                        span.innerHTML = dataArr[index];
+                        li.append(img);
+                        li.append(document.createElement('br'));
+                        li.append(span);
+                        ul.append(li);
+                    }
+                }
+                //删除加载更多的li
+                if (loadMorePromptLi) {
+                    loadMorePromptLi.remove();
+                    loadMorePromptLi = '';
+                }
+                if (theDocCurrentPageIndex === 2) {
+                    let show_stored_pictures_div = $('#show_stored_pictures_div');
+                    if (show_stored_pictures_div) {
+                        if (show_stored_pictures_div[0].scrollTop + show_stored_pictures_div.height() >= show_stored_pictures_div[0].scrollHeight) {
+                            mCreateDocLoadMoreSpanFUnc();
+                        }
+                    }
+                }
+                /*
+                 *避免重复创建
+                 */
+                if (theDocCurrentPageIndex - 1 === 1)
+                    $('#show_stored_pictures_div').append(ul);
+            }
+
+        }).fail(function () {
+            showOrHiddenLoadingDiv(false);
+            if (confirm("网络请求失败，是否要重新请求？")) {
+                termalLoadingDoc();
+            }
+        });
+    };
+
+    //删除文档的ajax
+    var deleteDocsAjax;
+    //删除文档的参数
+    var deleteDocsData = '';
+    //删除文档的请求
+    var deleteDocCmd = function () {
+        if (wantDeleteDocsPathArray.length === 0)
+            return;
+        if (!deleteDocsData) {
+            //整理参数：   url,url....
+            for (let index = 0; index < wantDeleteDocsPathArray.length; index++) {
+                if (index + 1 !== wantDeleteDocsPathArray.length)
+                    deleteDocsData += (wantDeleteDocsPathArray[index] + SPLIT_STRING);
+                else
+                    deleteDocsData += wantDeleteDocsPathArray[index];
+            }
+        }
+        showOrHiddenLoadingDiv(true);
+        if (deleteDocsAjax)
+            deleteDocsAjax.abort();
+        deleteDocsAjax = $.ajax({
+            method: 'POST',
+            url: 'http://' + IP + ':' + PORT_PATH + '/data/deleteDocsInfo',
+            data: {data: deleteDocsData},
+            dataType: 'text',
+            success: function (data) {
+                showOrHiddenLoadingDiv(false);
+                if (data === SUCCESS) {
+                    wantDeleteDocsPathArray.length=0;
+                    deleteDocsData = '';
+                    alert('删除操作完成!!!')
+                } else if (data === FAILURE) {
+                    if (confirm('删除操作失败，重新请求操作？')) {
+                        deleteDocCmd()
+                    }
+                } else {
+                    wantDeleteDocsPathArray.length=0;
+                    deleteDocsData = '';
+                    alert('部分删除操作完成!!!')
+                }
+            }
+        }).fail(function () {
+            showOrHiddenLoadingDiv(false);
+            if (confirm("网络请求失败，是否要重新请求？")) {
+                deleteDocCmd();
+            }else {
+                deleteDocsData = '';
+                wantDeleteDocsPathArray.length=0;
+            }
+        })
+
+    };
+    var mCreateDocLoadMoreSpanFUnc =function(){
+        let li = document.createElement('li');
+        li.style.textAlign = "center";
+        li.style.listStyleType = 'none';
+        li.setAttribute('id', 'load_more');
+        let span = document.createElement('span');
+        span.setAttribute('id', 'load_more_span');
+        span.innerHTML = '点击加载更多...';
+        /*
+         * 进行热加载：
+         *    1.先加载一部分数据，此时记住该id或者说按照页数进行查询；
+         *    2.当查询完毕后拖拽进行进一步加载
+         */
+        span.onclick = function (ev) {
+            if (this.innerHTML === '点击加载更多...') {
+                this.innerHTML = '正在加载中...';
+                termalLoadingDoc();
+            }
+        };
+        li.append(span);
+        ul.append(li);
+        loadMorePromptLi = li;
+    };
+    $('#view_stored_docs_button').on('click', function () {
+        if ($(this).html().includes('操作已存文档')) {
+            //清空删除文档数组
+            wantDeleteDocsPathArray.length = 0;
+            loadDocsPathArray.length = 0;
+
+            $(this).html('完成操作');
+            var showStoredPicturesDiv = document.createElement("div");
+            showStoredPicturesDiv.setAttribute('class', 'show_stored_pictures_div');
+            showStoredPicturesDiv.setAttribute('id', 'show_stored_pictures_div');
+            $('body').append(showStoredPicturesDiv);
+            $('#show_stored_pictures_div').css({
+                'position': 'absolute',
+                'z-index': '100',
+                'width': '40%',
+                'height': '50%',
+                'margin-left': '50%',
+                'top': '260px',
+                'transform': 'translateX(-50%)',
+                'border-radius': '10px',
+                'background': 'white',
+                'overflow-y': 'auto'
+            });
+            //监听div的滚动事件
+            // 滚动距离总长(注意不是滚动条的长度)
+            var nScrollHeight = 0;
+            //滚动到的当前位置
+            var nScrollTop = 0;
+            var nDivHeight = $("#show_stored_pictures_div").height();
+            $('#show_stored_pictures_div').scroll(function () {
+                if (!loadMorePromptLi) {
+                    nScrollHeight = $(this)[0].scrollHeight;
+                    nScrollTop = $(this)[0].scrollTop;
+                    //当滑动到底部时，添加一个标签，点击加载下一页
+                    if (nScrollTop + nDivHeight >= nScrollHeight) {
+                        mCreateDocLoadMoreSpanFUnc();
+                    }
+                }
+            });
+            termalLoadingDoc();
+        } else {
+            $(this).html('操作已存文档');
+            $('#show_stored_pictures_div').remove();
+            theDocCurrentPageIndex = 1;
+            ul = document.createElement('ul');
+            ul.style.width = '90%';
+            ul.style.height = 'max-length';
+            //进行删除操作
+            deleteDocCmd()
+        }
+    });
+</script>
+</html>
