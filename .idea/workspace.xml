@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="pb:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6d121eb4-2b07-41f5-abd2-06a28bdfe0b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_3_60.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajobs/controllers/ExceptionControllerAdvice.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/pb.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/controllers/ArticleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/controllers/DataController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/controllers/ExceptionControllerAdvice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/controllers/OwnerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/controllers/TestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/controllers/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/daos/ArticleInfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/daos/DocInfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/daos/PictureInpDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/daos/RecordInfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/daos/TitleDictumDiagramInfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/daos/UserInfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/ArticleInfoJdbcTemplate$getArticleNames$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/ArticleInfoJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/CommentInfoJdbcTemplate$CommentTableMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/CommentInfoJdbcTemplate$ResponseTableMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/CommentInfoJdbcTemplate$checkTableWhetherExisting$table_name$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/CommentInfoJdbcTemplate$getCommentData$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/CommentInfoJdbcTemplate$modifyCommentTableData$$inlined$forEach$lambda$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/CommentInfoJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/DocInfoJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/OwnerJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/PictureInfoJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/RecordInfoTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/TitleDictumDiagramInfoJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/impdaos/UserInfoJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/mappers/ArticleInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/mappers/DocInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/mappers/PictureInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/mappers/TitleDictumDiagramInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/mappers/UserInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/tabledatas/ArticleInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/tabledatas/CommentTableInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/tabledatas/DocInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/tabledatas/PictureInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/tabledatas/RecordInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/tabledatas/ResponseCommentTableInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/tabledatas/TitleDictumDiagramInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/tabledatas/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/tools/CommandSqlField.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/ajobs/tools/Constants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/META-INF/pb.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/controllers/ArticleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/controllers/DataController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/controllers/ExceptionControllerAdvice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/controllers/OwnerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/controllers/TestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/controllers/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/daos/ArticleInfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/daos/DocInfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/daos/PictureInpDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/daos/RecordInfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/daos/TitleDictumDiagramInfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/daos/UserInfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/ArticleInfoJdbcTemplate$getArticleNames$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/ArticleInfoJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/CommentInfoJdbcTemplate$CommentTableMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/CommentInfoJdbcTemplate$ResponseTableMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/CommentInfoJdbcTemplate$checkTableWhetherExisting$table_name$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/CommentInfoJdbcTemplate$getCommentData$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/CommentInfoJdbcTemplate$modifyCommentTableData$$inlined$forEach$lambda$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/CommentInfoJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/DocInfoJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/OwnerJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/PictureInfoJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/RecordInfoTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/TitleDictumDiagramInfoJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/impdaos/UserInfoJdbcTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/mappers/ArticleInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/mappers/DocInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/mappers/PictureInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/mappers/TitleDictumDiagramInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/mappers/UserInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/tabledatas/ArticleInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/tabledatas/CommentTableInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/tabledatas/DocInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/tabledatas/PictureInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/tabledatas/RecordInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/tabledatas/ResponseCommentTableInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/tabledatas/TitleDictumDiagramInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/tabledatas/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/tools/CommandSqlField.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/com/ajobs/tools/Constants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/classes/jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/css/articleChoiceChildDiv.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/css/articleContentEditCmd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/css/loadingDiv.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/css/mainShow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/css/moduleChoice.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/css/showCommentArea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/css/showPictureTable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/htmls/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/aircraft.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/blog_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/comment_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/doc_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/doc_larger_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/docx_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/down_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/edit_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/failure_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/heart_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/introduce_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/left_arrow_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/leisure_article_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/logout_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/magnify_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/main_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/password_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/pdf_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/picture_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/plus_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/ppt_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/pptx_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/professional_article_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/read_article_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/record_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/reply_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/right_arrow_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/shrink_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/smile_icon_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/smile_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/smile_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/smile_icon_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/up_arrow_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/username_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/xls_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/imgs/xlsx_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/js/articelCommentCmd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/js/articleContentEditCmd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/js/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/js/createShowDocsTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/js/createShowPictureTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/js/mainShowLogic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/js/moduleChoice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/js/ownerVerify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/js/showOrHiddenLoadingDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/jsps/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/jsps/mainshow.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/jsps/signUp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/jsps/userExisting.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/annotations-13.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/commons-io-2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/kotlin-stdlib-1.3.41.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/kotlin-stdlib-common-1.3.41.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/kotlin-stdlib-jdk7-1.3.41.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/kotlin-stdlib-jdk8-1.3.41.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/mysql-connector-java-8.0.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/protobuf-java-3.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/servlet-api-2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/spring-aop-5.1.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/spring-beans-5.1.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/spring-context-5.1.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/spring-context-support-5.1.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/spring-core-5.1.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/spring-expression-5.1.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/spring-jcl-5.1.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/spring-jdbc-5.1.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/spring-tx-5.1.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/spring-web-5.1.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/lib/spring-webmvc-5.1.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/owner/editOwner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/owner/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/owner/ownerChoiceDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/owner/ownerChoicePhoto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/owner/ownerMain.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/owner/ownerModifyArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/owner/ownerWriteArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/owner/viewArticleComments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/pb-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/adapters/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/build-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/about/dialogs/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/clipboard/dialogs/paste.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/icons/bgcolor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/icons/hidpi/bgcolor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/icons/hidpi/textcolor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/icons/textcolor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/colorbutton/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/dialog/dialogDefinition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/filebrowser/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/image/dialogs/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/image/images/noimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/link/dialogs/anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/link/dialogs/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/link/images/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/link/images/hidpi/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/magicline/images/hidpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/magicline/images/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/magicline/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/panelbutton/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/pastefromword/filter/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/scayt/dialogs/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/scayt/dialogs/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/table/dialogs/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/tableselection/styles/tableselection.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/widget/images/handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/css/samples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/img/github-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/img/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/img/header-separator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/img/navigation-tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/js/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/js/sf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/appendto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/assets/inlineall/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/assets/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/assets/uilanguages/languages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/datafiltering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/divreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/inlineall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/jquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/magicline/magicline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/readonly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/replacebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/tabindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/uicolor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/uilanguages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/font/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/images/hidpi/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/images/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/ckeditor/vendor/promise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/pblog-1.0.0/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/pblog_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/pb_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/pblog_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/pb_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/springbproject_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/springbproject_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/article_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/article_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pblog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajobs/controllers/DataController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajobs/controllers/DataController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajobs/impdaos/ArticleInfoJdbcTemplate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajobs/impdaos/ArticleInfoJdbcTemplate.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajobs/tools/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajobs/tools/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/PBlog-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pb-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/htmls/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/htmls/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/articelCommentCmd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/articelCommentCmd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/articleContentEditCmd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/articleContentEditCmd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/createShowDocsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/createShowDocsTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/createShowPictureTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/createShowPictureTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/mainShowLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/mainShowLogic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/moduleChoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/moduleChoice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/ownerVerify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/ownerVerify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/editOwner.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/editOwner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/ownerChoiceDoc.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/ownerChoiceDoc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/ownerChoicePhoto.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/ownerChoicePhoto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/ownerMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/ownerMain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/ownerModifyArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/ownerModifyArticle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/ownerWriteArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/ownerWriteArticle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/viewArticleComments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/owner/viewArticleComments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/professionalArticleHtmls/15445515.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="JavaScript File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="234" />
+    <option name="y" value="75" />
+    <option name="width" value="825" />
+    <option name="height" value="621" />
+  </component>
+  <component name="ProjectId" id="1VSRxy2EH4ua6YlaFdG2sg94QCA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="10" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2488954" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\compilers\in-idea\projects\pblog\src\main\webapp\WEB-INF\imgs" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.ajobs.tabledatas" />
+      <recent name="com.ajobs.impdaos" />
+      <recent name="com.ajobs.daos" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ajobs.mappers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\compilers\in-idea\projects\pblog\src\main\webapp\WEB-INF\owner" />
+      <recent name="D:\compilers\in-idea\projects\pblog\src\main\webapp\WEB-INF\imgs" />
+      <recent name="D:\compilers\in-idea\projects\pblog\src\main\webapp\WEB-INF\css" />
+      <recent name="D:\compilers\in-idea\projects\pblog\files" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat">
+    <configuration name="TestKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="TestKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="pb:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/pb" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_pblog_3" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49193" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="pb:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Kotlin.TestKt" />
+      <item itemvalue="Tomcat Server.Tomcat" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.TestKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d121eb4-2b07-41f5-abd2-06a28bdfe0b4" name="Default Changelist" comment="" />
+      <created>1565002026253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565002026253</updated>
+      <workItem from="1565002028255" duration="10066000" />
+      <workItem from="1565073740869" duration="129000" />
+      <workItem from="1565074010759" duration="19833000" />
+      <workItem from="1565143761921" duration="32017000" />
+      <workItem from="1565250366727" duration="17519000" />
+      <workItem from="1565317896125" duration="11817000" />
+      <workItem from="1565337109588" duration="12827000" />
+      <workItem from="1565415479254" duration="1228000" />
+      <workItem from="1565426833425" duration="17602000" />
+      <workItem from="1565490069449" duration="12547000" />
+      <workItem from="1565573471487" duration="19025000" />
+      <workItem from="1565662186907" duration="4728000" />
+      <workItem from="1565875705465" duration="12970000" />
+      <workItem from="1565917692265" duration="9662000" />
+      <workItem from="1565938806972" duration="676000" />
+      <workItem from="1566008364942" duration="18094000" />
+      <workItem from="1566094331522" duration="21280000" />
+      <workItem from="1566782260442" duration="1453000" />
+      <workItem from="1566784119823" duration="26991000" />
+      <workItem from="1566855720345" duration="34382000" />
+      <workItem from="1566951240476" duration="18861000" />
+      <workItem from="1567037839790" duration="26483000" />
+      <workItem from="1567128064821" duration="15354000" />
+      <workItem from="1567155774592" duration="5769000" />
+      <workItem from="1567210681509" duration="14928000" />
+      <workItem from="1567295445730" duration="4460000" />
+      <workItem from="1567300889650" duration="8973000" />
+      <workItem from="1567520004841" duration="339000" />
+      <workItem from="1567556816268" duration="730000" />
+      <workItem from="1567752384739" duration="5076000" />
+      <workItem from="1567757890787" duration="147000" />
+      <workItem from="1567768662569" duration="144000" />
+      <workItem from="1567815132414" duration="32000" />
+      <workItem from="1567823451795" duration="90000" />
+      <workItem from="1567942985093" duration="3251000" />
+      <workItem from="1567993866739" duration="2368000" />
+      <workItem from="1568172208989" duration="32000" />
+      <workItem from="1568183886563" duration="3890000" />
+      <workItem from="1568276159701" duration="3104000" />
+      <workItem from="1568282657505" duration="720000" />
+      <workItem from="1568283650020" duration="372000" />
+      <workItem from="1568287704738" duration="1990000" />
+      <workItem from="1568294704386" duration="159000" />
+      <workItem from="1568338529296" duration="355000" />
+      <workItem from="1568342777916" duration="119000" />
+      <workItem from="1568345680915" duration="142000" />
+      <workItem from="1568449176574" duration="278000" />
+      <workItem from="1568528633204" duration="26000" />
+      <workItem from="1568528668839" duration="11000" />
+      <workItem from="1568726205553" duration="159000" />
+      <workItem from="1568732185331" duration="50000" />
+      <workItem from="1568732512876" duration="23000" />
+      <workItem from="1569195365857" duration="10331000" />
+      <workItem from="1569220190700" duration="289000" />
+      <workItem from="1569288485965" duration="97000" />
+      <workItem from="1569464274128" duration="769000" />
+      <workItem from="1569569983624" duration="68000" />
+      <workItem from="1570002177207" duration="978000" />
+      <workItem from="1571228750884" duration="330000" />
+      <workItem from="1571229209887" duration="98000" />
+      <workItem from="1571229371612" duration="318000" />
+      <workItem from="1571229701953" duration="1477000" />
+      <workItem from="1571231562287" duration="235000" />
+      <workItem from="1571231806234" duration="299000" />
+      <workItem from="1571232108528" duration="94000" />
+      <workItem from="1571232205515" duration="44000" />
+      <workItem from="1571232253342" duration="73000" />
+      <workItem from="1571232329869" duration="167000" />
+      <workItem from="1571232500278" duration="60000" />
+      <workItem from="1571232562994" duration="71000" />
+      <workItem from="1571232636038" duration="165000" />
+      <workItem from="1571232836600" duration="578000" />
+      <workItem from="1571234771076" duration="760000" />
+      <workItem from="1571235883352" duration="497000" />
+      <workItem from="1571570281154" duration="136000" />
+      <workItem from="1571715516783" duration="526000" />
+      <workItem from="1571721991246" duration="86000" />
+      <workItem from="1571798823364" duration="286000" />
+      <workItem from="1571799293038" duration="63000" />
+      <workItem from="1572238791322" duration="73000" />
+      <workItem from="1572248980966" duration="40000" />
+      <workItem from="1572263511084" duration="244000" />
+      <workItem from="1572264124747" duration="36000" />
+      <workItem from="1572267643112" duration="642000" />
+      <workItem from="1572348315211" duration="19000" />
+      <workItem from="1573450570063" duration="77000" />
+      <workItem from="1573450660687" duration="15000" />
+      <workItem from="1573450681832" duration="12000" />
+      <workItem from="1573450696482" duration="19000" />
+      <workItem from="1573450763886" duration="199000" />
+      <workItem from="1573450993714" duration="297000" />
+      <workItem from="1573474234882" duration="2650000" />
+      <workItem from="1573477000717" duration="135000" />
+      <workItem from="1573477143406" duration="3000" />
+      <workItem from="1573525384021" duration="1123000" />
+      <workItem from="1573527515963" duration="273000" />
+      <workItem from="1573528038768" duration="26000" />
+      <workItem from="1573534064552" duration="315000" />
+      <workItem from="1573781166723" duration="491000" />
+      <workItem from="1573801801351" duration="466000" />
+      <workItem from="1573802276539" duration="9000" />
+      <workItem from="1574241147623" duration="16000" />
+      <workItem from="1574241227111" duration="2456000" />
+      <workItem from="1574243697440" duration="318000" />
+      <workItem from="1574244031807" duration="4764000" />
+      <workItem from="1574769024079" duration="1389000" />
+      <workItem from="1575446279600" duration="126000" />
+      <workItem from="1575515268612" duration="887000" />
+      <workItem from="1575516372995" duration="937000" />
+      <workItem from="1575517798873" duration="581000" />
+      <workItem from="1575547456869" duration="2330000" />
+      <workItem from="1575555248600" duration="1037000" />
+      <workItem from="1577244761376" duration="570000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="102" y="0" key="CommitChangelistDialog2" timestamp="1577244990205">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="102" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1577244990205" />
+    <state x="421" y="86" key="FileChooserDialogImpl" timestamp="1577245396421">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1577245396421" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1577245328396">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1577245328396" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>pb:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2488954" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>main</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2488954" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2488954" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

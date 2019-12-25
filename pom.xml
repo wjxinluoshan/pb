@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ajobs</groupId>
-    <artifactId>pblog</artifactId>
+    <artifactId>pb</artifactId>
     <version>1.0.0</version>
 
     <packaging>war</packaging>
@@ -96,6 +96,9 @@
             <version>${kotlin.version}</version>
             <scope>test</scope>
         </dependency>
+        <!--
+           1. spring 文件上传
+        -->
         <!-- Apache Commons FileUpload -->
         <dependency>
             <groupId>commons-fileupload</groupId>

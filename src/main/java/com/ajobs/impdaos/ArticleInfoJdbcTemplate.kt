@@ -5,7 +5,6 @@ import com.ajobs.mappers.ArticleInfoMapper
 import com.ajobs.tabledatas.ArticleInfo
 import com.ajobs.tools.Constants
 import org.springframework.jdbc.core.JdbcTemplate
-import javax.print.DocFlavor
 import javax.sql.DataSource
 
 class ArticleInfoJdbcTemplate : ArticleInfoDao {

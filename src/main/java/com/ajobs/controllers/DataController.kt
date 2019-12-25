@@ -565,6 +565,7 @@ class DataController {
     @ResponseBody
     fun downloadDoc(filePath: String, response: HttpServletResponse) {
         try {
+//           文件名的中文解码
             FileInputStream(File(URLDecoder.decode(filePath, "utf-8"))).use {
                 response.contentType = "application/x-download"
                 var fileName: String
@@ -577,7 +578,6 @@ class DataController {
         } catch (e: Exception) {
             e.printStackTrace()
         }
-        println(URLDecoder.decode(filePath, "utf-8"))
     }
 
 

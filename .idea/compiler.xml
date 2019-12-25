@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="pblog" />
+        <module name="pb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="pblog" target="1.5" />
+      <module name="pb" target="1.5" />
       <module name="springbproject" target="1.5" />
     </bytecodeTargetLevel>
   </component>
