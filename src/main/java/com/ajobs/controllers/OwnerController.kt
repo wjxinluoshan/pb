@@ -26,6 +26,8 @@ class OwnerController {
      */
     private var mRequestIp = ""
     private var mOwnerStatus = "losed"
+
+
     private val LOGINED = "logined"
     private val LOSED_CONN = "losed"
 

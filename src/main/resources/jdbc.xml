@@ -11,7 +11,7 @@
         <property name="url"
                   value="jdbc:mysql://localhost:3306/personal_blog?useUnicode=true&amp;characterEncoding=UTF-8&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=CTT"/>
         <property name="username" value="root"/>
-        <property name="password" value="wjx"/>
+        <property name="password" value="Mysql520.."/>
     </bean>
 
     <!-- 配置评论数据库 -->
@@ -21,7 +21,7 @@
         <property name="url"
                   value="jdbc:mysql://localhost:3306/pblog_comment?useUnicode=true&amp;characterEncoding=UTF-8&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=CTT"/>
         <property name="username" value="root"/>
-        <property name="password" value="wjx"/>
+        <property name="password" value="Mysql520.."/>
     </bean>
 
     <!-- Definition for userInfoJdbcTemplate bean -->

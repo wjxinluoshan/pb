@@ -28,13 +28,13 @@
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.17" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
-          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.41" />
-          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.3.41" />
-          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.41" />
-          <element id="library" level="project" name="Maven: org.jetbrains:annotations:13.0" />
-          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.41" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61" />
           <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.3.1" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.3.61" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61" />
+          <element id="library" level="project" name="Maven: org.jetbrains:annotations:13.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

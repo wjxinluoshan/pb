@@ -11,14 +11,14 @@ public class Constants {
     /**
      * 存档文档的绝对路径
      */
-   public final static String DocDirPath = "C:\\wjx\\tomcat\\apache-tomcat-9.0.26\\webapps\\pb\\files";
+   public final static String DocDirPath = "/root/wjx/tomcat/apache-tomcat-9.0.29/webapps/pb/files";
 //    public final static String DocDirPath = "files";
 
     /**
      * 存放文章的绝对路径
      */
-    public final static String LeisureArticleDirPath = "C:\\wjx\\tomcat\\apache-tomcat-9.0.26\\webapps\\pb\\WEB-INF\\leisureArticleHtmls";
-    public final static String ProfessionalArticleDirPath = "C:\\wjx\\tomcat\\apache-tomcat-9.0.26\\webapps\\pb\\WEB-INF\\professionalArticleHtmls";
+    public final static String LeisureArticleDirPath = "/root/wjx/tomcat/apache-tomcat-9.0.29/webapps/pb/WEB-INF/leisureArticleHtmls";
+    public final static String ProfessionalArticleDirPath = "/root/wjx/tomcat/apache-tomcat-9.0.29/webapps/pb/WEB-INF/professionalArticleHtmls";
 //    public final static String LeisureArticleDirPath = "WEB-INF/leisureArticleHtmls";
 //    public final static String ProfessionalArticleDirPath = "WEB-INF/professionalArticleHtmls";
 
